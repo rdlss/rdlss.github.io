@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+  <head> </head>
+  <title>Calculando el Imc</title>
+  </head>
+  <body>
+   
+    <h1>Calculo del ImC</h1>
+    <p> Introduce tu peso (En Kilogramos):
+    <input type ="text" id="peso"></P>
+    <p> Introduce tu altura (En Metros): 
+    <input type="text" id="altura"></p>
+    <button onclick="calcularIMC()">CalcularIMC</button>
+    <p id="resultado"></p>
+
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/TvWO7XjP-6E?si=vxCRGFzMJ08-YtJZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+
+
+    <body bgcolor="#'00FF00">
+    <img src ="image/IMC_1.webp">
+    <img src ="image/IMC.webp">
+      
+  
+
+
+    <script>
+    function calcularIMC() {
+        var peso =parseFloat(document.getElementById("peso").value);
+        var altura=parseFloat(document.getElementById("altura").value);
+        var imc=peso/(altura*altura);
+
+
+        document.getElementById("resultado").innerText=`Tu IMC es: ${imc.toFixed(2)}`;
+    }        
+    </script>
+
+
+  </body>
+</html>
